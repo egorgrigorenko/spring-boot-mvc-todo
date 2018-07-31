@@ -7,5 +7,8 @@ import org.springframework.boot.runApplication
 class SpringBootMvcTodoApplication
 
 fun main(args: Array<String>) {
-    runApplication<SpringBootMvcTodoApplication>(*args)
+    val ctx = runApplication<SpringBootMvcTodoApplication>(*args)
+    val beanNames = ctx.beanDefinitionNames
+    beanNames.sort()
+    beanNames.forEach(::println)
 }

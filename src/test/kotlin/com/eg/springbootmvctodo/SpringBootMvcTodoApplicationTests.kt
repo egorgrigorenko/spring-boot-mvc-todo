@@ -12,5 +12,4 @@ class SpringBootMvcTodoApplicationTests {
 	@Test
 	fun contextLoads() {
 	}
-
 }
